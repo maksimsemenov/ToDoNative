@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "302487623650",
+    "firebase_url": "https://popping-torch-8030.firebaseio.com",
+    "project_id": "popping-torch-8030",
+    "storage_bucket": "popping-torch-8030.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302487623650:android:4f0afffb2f8c869a",
+        "android_client_info": {
+          "package_name": "com.todonative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302487623650-anjkr4qn5eihhvu7388hcqd6ic01la7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwfpdzzdGfX-hhyQANEx2Ru_ASSyAATFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
