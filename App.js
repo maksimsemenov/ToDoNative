@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react'
 import { Platform, StyleSheet, Text, View, Button } from 'react-native'
 import firebase from 'react-native-firebase'
@@ -62,7 +56,7 @@ export default class App extends Component<Props> {
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-        <Button onPress={this.onLoginOrRegister}>Facebook</Button>
+        <Button onPress={this.onLoginOrRegister} title="Facebook" />
         {this.state.user && <Text>{this.state.user.toString()}</Text>}
       </View>
     )

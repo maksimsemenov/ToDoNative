@@ -29,22 +29,15 @@
       "jsx": true,
       "modules": true
     },
-    "global": {
+    "globals": {
       "Promise": true
     },
     "parser": "babel-eslint",
     "extends": "eslint:recommended",
-    "plugins": [
-      "react"
-    ],
+    "plugins": ["react"],
     "rules": {
-      "strict": [
-        2,
-        "never"
-      ],
-      "no-unused-vars": [
-        1
-      ],
+      "strict": [2, "never"],
+      "no-unused-vars": [1],
       "react/jsx-uses-react": 2,
       "react/jsx-uses-vars": 2,
       "react/react-in-jsx-scope": 2
