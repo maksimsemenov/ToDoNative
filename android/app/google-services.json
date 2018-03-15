@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:302487623650:android:4f0afffb2f8c869a",
+        "mobilesdk_app_id": "1:302487623650:android:1ba9432106c17b27",
         "android_client_info": {
-          "package_name": "com.todonative"
+          "package_name": "com.antonsemenov.todonative"
         }
       },
       "oauth_client": [

@@ -7,9 +7,9 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>302487623650-90lpdvegqp22e9hmag6pfc5d0c2k9ehl.apps.googleusercontent.com</string>
+	<string>302487623650-7n10k2qti4006nbjdrmq3ksnue7j0ojt.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.302487623650-90lpdvegqp22e9hmag6pfc5d0c2k9ehl</string>
+	<string>com.googleusercontent.apps.302487623650-7n10k2qti4006nbjdrmq3ksnue7j0ojt</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDaNL30Knxdv82qZFTOUgF5nb52lfTpmSA</string>
 	<key>GCM_SENDER_ID</key>
@@ -17,7 +17,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>org.reactjs.native.example.ToDoNative</string>
+	<string>com.antonsemenov.todonative</string>
 	<key>PROJECT_ID</key>
 	<string>popping-torch-8030</string>
 	<key>STORAGE_BUCKET</key>
@@ -33,7 +33,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:302487623650:ios:0715092b28e828dd</string>
+	<string>1:302487623650:ios:1ba9432106c17b27</string>
 	<key>DATABASE_URL</key>
 	<string>https://popping-torch-8030.firebaseio.com</string>
 </dict>
