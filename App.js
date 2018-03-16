@@ -51,14 +51,14 @@ export default class App extends Component<Props> {
       })
   }
   render() {
+    console.log(this.state.user)
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native!</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
-        <Button onPress={this.handleFacebokAuth} title="Fabook" />
-        {this.state.user && <Text>{this.state.user.toString()}</Text>}
-        <LoginButton />
+        {!this.state.user && <Button onPress={this.handleFacebokAuth} title="Fabook" />}
+        {this.state.user && <Text>{this.state.user.displayName}</Text>}
       </View>
     )
   }

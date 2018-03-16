@@ -9,8 +9,8 @@ target 'ToDoNative' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
 
-  pod 'FBSDKCoreKit'
-  pod 'FBSDKLoginKit'
+  # pod 'FBSDKCoreKit'
+  # pod 'FBSDKLoginKit'
 
 
   target 'ToDoNativeTests' do

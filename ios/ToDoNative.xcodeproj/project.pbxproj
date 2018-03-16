@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -28,6 +29,11 @@
 		B23C620423B2BC906621A713 /* libPods-ToDoNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CB2DFB20B3C4116F2BBA89 /* libPods-ToDoNativeTests.a */; };
 		B5DDA625205AFEFC005AF61B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5DDA5EF205AFEFC005AF61B /* GoogleService-Info.plist */; };
 		B5DDA626205AFEFC005AF61B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5DDA5EF205AFEFC005AF61B /* GoogleService-Info.plist */; };
+		B5E2FA78205BEE0F00C66837 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E2FA4E205BEE0D00C66837 /* Bolts.framework */; };
+		B5E2FA79205BEE0F00C66837 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E2FA75205BEE0D00C66837 /* FBSDKLoginKit.framework */; };
+		B5E2FA7A205BEE0F00C66837 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E2FA76205BEE0E00C66837 /* FBSDKShareKit.framework */; };
+		B5E2FA7B205BEE0F00C66837 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E2FA77205BEE0E00C66837 /* FBSDKCoreKit.framework */; };
+		F37CF28506D342ECB2CBFB90 /* libRCTFBSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 500AD4EF92CC48FB8B6E1AA7 /* libRCTFBSDK.a */; };
 		F8167719BC1B90883B139ECD /* libPods-ToDoNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C83D65D28D551169AD609A9 /* libPods-ToDoNative.a */; };
 /* End PBXBuildFile section */
 
@@ -305,6 +311,13 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNFirebase;
 		};
+		B5E2FAF7205BF07D00C66837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44B456DF3AA34416869AA679 /* RCTFBSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9350E0F11CE3B0920041D815;
+			remoteInfo = RCTFBSDK;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -329,6 +342,8 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		44868AF656CD4E0BF57901B3 /* Pods-ToDoNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoNative.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoNative/Pods-ToDoNative.release.xcconfig"; sourceTree = "<group>"; };
+		44B456DF3AA34416869AA679 /* RCTFBSDK.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTFBSDK.xcodeproj; path = "../node_modules/react-native-fbsdk/ios/RCTFBSDK.xcodeproj"; sourceTree = "<group>"; };
+		500AD4EF92CC48FB8B6E1AA7 /* libRCTFBSDK.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTFBSDK.a; sourceTree = "<group>"; };
 		5C83D65D28D551169AD609A9 /* libPods-ToDoNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToDoNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -338,6 +353,10 @@
 		A5CB2DFB20B3C4116F2BBA89 /* libPods-ToDoNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ToDoNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B5DDA5EF205AFEFC005AF61B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B5E2FA4E205BEE0D00C66837 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		B5E2FA75205BEE0D00C66837 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		B5E2FA76205BEE0E00C66837 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		B5E2FA77205BEE0E00C66837 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		DD55C5949305408D1941281D /* Pods-ToDoNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoNativeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoNativeTests/Pods-ToDoNativeTests.release.xcconfig"; sourceTree = "<group>"; };
 		EFCE2274D4E147888D44F9C8 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		F62F20A7F477AC3F0D6E73DF /* Pods-ToDoNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoNative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoNative/Pods-ToDoNative.debug.xcconfig"; sourceTree = "<group>"; };
@@ -357,6 +376,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E2FA79205BEE0F00C66837 /* FBSDKLoginKit.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -364,14 +384,18 @@
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
+				B5E2FA7B205BEE0F00C66837 /* FBSDKCoreKit.framework in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				B5E2FA7A205BEE0F00C66837 /* FBSDKShareKit.framework in Frameworks */,
 				F8167719BC1B90883B139ECD /* libPods-ToDoNative.a in Frameworks */,
 				528A982CDCC846BF80754224 /* libRNFirebase.a in Frameworks */,
+				B5E2FA78205BEE0F00C66837 /* Bolts.framework in Frameworks */,
+				F37CF28506D342ECB2CBFB90 /* libRCTFBSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +522,10 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5E2FA4E205BEE0D00C66837 /* Bolts.framework */,
+				B5E2FA77205BEE0E00C66837 /* FBSDKCoreKit.framework */,
+				B5E2FA75205BEE0D00C66837 /* FBSDKLoginKit.framework */,
+				B5E2FA76205BEE0E00C66837 /* FBSDKShareKit.framework */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 				5C83D65D28D551169AD609A9 /* libPods-ToDoNative.a */,
 				A5CB2DFB20B3C4116F2BBA89 /* libPods-ToDoNativeTests.a */,
@@ -539,6 +567,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				89BC2A779E1F409DBC139EBF /* RNFirebase.xcodeproj */,
+				44B456DF3AA34416869AA679 /* RCTFBSDK.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -590,7 +619,7 @@
 			isa = PBXGroup;
 			children = (
 				EFCE2274D4E147888D44F9C8 /* libRNFirebase.a */,
-				42D4C2E102964C129481441B /* libRCTFBSDK.a */,
+				500AD4EF92CC48FB8B6E1AA7 /* libRCTFBSDK.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -599,6 +628,14 @@
 			isa = PBXGroup;
 			children = (
 				B5DDA68E205B08AF005AF61B /* libRNFirebase.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5E2FAF4205BF07D00C66837 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5E2FAF8205BF07D00C66837 /* libRCTFBSDK.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -670,7 +707,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = R9AMGWHUHR;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = R9AMGWHUHR;
 					};
 				};
 			};
@@ -697,6 +738,10 @@
 				{
 					ProductGroup = ADBDB9201DFEBF0600ED6528 /* Products */;
 					ProjectRef = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
+				},
+				{
+					ProductGroup = B5E2FAF4205BF07D00C66837 /* Products */;
+					ProjectRef = 44B456DF3AA34416869AA679 /* RCTFBSDK.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302B61ABCB90400DB3ED1 /* Products */;
@@ -1014,6 +1059,13 @@
 			remoteRef = B5DDA68D205B08AF005AF61B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		B5E2FAF8205BF07D00C66837 /* libRCTFBSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTFBSDK.a;
+			remoteRef = B5E2FAF7205BF07D00C66837 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1199,6 +1251,7 @@
 			baseConfigurationReference = A2CAFCFB129C75E45E8D6947 /* Pods-ToDoNativeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R9AMGWHUHR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1206,12 +1259,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
 				);
 				INFOPLIST_FILE = ToDoNativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1228,15 +1283,18 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = R9AMGWHUHR;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
 				);
 				INFOPLIST_FILE = ToDoNativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1254,9 +1312,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = R9AMGWHUHR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
 				);
 				INFOPLIST_FILE = ToDoNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1265,6 +1329,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.todo.todonative;
 				PRODUCT_NAME = ToDoNative;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1276,9 +1341,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R9AMGWHUHR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
+					"$(SRCROOT)/../node_modules/react-native-fbsdk/ios/RCTFBSDK/**",
 				);
 				INFOPLIST_FILE = ToDoNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1287,6 +1358,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.todo.todonative;
 				PRODUCT_NAME = ToDoNative;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
