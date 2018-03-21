@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "react": "^16.3.0-alpha.1",
@@ -30,39 +31,25 @@
       "modules": true
     },
     "env": {
-      "browser": true
+      "browser": true,
+      "node": true,
+      "jest/globals": true
     },
     "globals": {
       "Promise": true
     },
     "parser": "babel-eslint",
     "rules": {
-      "quotes": [
-        1,
-        "single"
-      ],
-      "strict": [
-        2,
-        "never"
-      ],
-      "semi": [
-        0,
-        "always"
-      ],
-      "no-unused-vars": [
-        1
-      ],
+      "quotes": [1, "single"],
+      "strict": [2, "never"],
+      "semi": [0, "always"],
+      "no-unused-vars": [1],
       "react/jsx-uses-react": 2,
       "react/jsx-uses-vars": 2,
       "react/react-in-jsx-scope": 2
     },
-    "extends": [
-      "eslint:recommended",
-      "plugin:react/recommended"
-    ],
-    "plugins": [
-      "react"
-    ]
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    "plugins": ["react", "jest"]
   },
   "prettier": {
     "semi": false,
