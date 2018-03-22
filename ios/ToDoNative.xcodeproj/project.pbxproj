@@ -327,7 +327,7 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* ToDoNativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoNativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* ToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ToDoNativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoNativeTests.m; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
@@ -601,7 +601,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* ToDoNative.app */,
-				00E356EE1AD99517003FC87E /* ToDoNativeTests.xctest */,
+				00E356EE1AD99517003FC87E /* ToDoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -654,9 +654,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* ToDoNativeTests */ = {
+		00E356ED1AD99517003FC87E /* ToDoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ToDoNativeTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ToDoTests" */;
 			buildPhases = (
 				DB6289DA23C825CCE393677B /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -670,14 +670,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = ToDoNativeTests;
+			name = ToDoTests;
 			productName = ToDoNativeTests;
-			productReference = 00E356EE1AD99517003FC87E /* ToDoNativeTests.xctest */;
+			productReference = 00E356EE1AD99517003FC87E /* ToDoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* ToDoNative */ = {
+		13B07F861A680F5B00A75B9A /* ToDo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ToDoNative" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ToDo" */;
 			buildPhases = (
 				EE228C9D642104A1EF53AF17 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -691,7 +691,7 @@
 			);
 			dependencies = (
 			);
-			name = ToDoNative;
+			name = ToDo;
 			productName = "Hello World";
 			productReference = 13B07F961A680F5B00A75B9A /* ToDoNative.app */;
 			productType = "com.apple.product-type.application";
@@ -786,8 +786,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* ToDoNative */,
-				00E356ED1AD99517003FC87E /* ToDoNativeTests */,
+				13B07F861A680F5B00A75B9A /* ToDo */,
+				00E356ED1AD99517003FC87E /* ToDoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1228,7 +1228,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* ToDoNative */;
+			target = 13B07F861A680F5B00A75B9A /* ToDo */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1443,7 +1443,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ToDoNativeTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ToDoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1452,7 +1452,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ToDoNative" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ToDo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,

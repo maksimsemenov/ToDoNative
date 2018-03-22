@@ -1,5 +1,5 @@
 {
-  "name": "ToDoNative",
+  "name": "ToDo",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -11,7 +11,10 @@
     "react": "^16.3.0-alpha.1",
     "react-native": "0.54.2",
     "react-native-fbsdk": "^0.7.0",
-    "react-native-firebase": "^3.3.1"
+    "react-native-firebase": "^3.3.1",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
@@ -40,16 +43,33 @@
     },
     "parser": "babel-eslint",
     "rules": {
-      "quotes": [1, "single"],
-      "strict": [2, "never"],
-      "semi": [0, "always"],
-      "no-unused-vars": [1],
+      "quotes": [
+        1,
+        "single"
+      ],
+      "strict": [
+        2,
+        "never"
+      ],
+      "semi": [
+        0,
+        "always"
+      ],
+      "no-unused-vars": [
+        1
+      ],
       "react/jsx-uses-react": 2,
       "react/jsx-uses-vars": 2,
       "react/react-in-jsx-scope": 2
     },
-    "extends": ["eslint:recommended", "plugin:react/recommended"],
-    "plugins": ["react", "jest"]
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "plugins": [
+      "react",
+      "jest"
+    ]
   },
   "prettier": {
     "semi": false,
