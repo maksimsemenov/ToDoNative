@@ -1,4 +1,4 @@
-import authReducer, { logIn, logOut } from './auth'
+import authReducer, { logIn, AUTH_LOG_OUT } from './auth'
 
 describe('Auth reducer', () => {
   it('returns initial state', () => {
@@ -17,6 +17,8 @@ describe('Auth reducer', () => {
   })
   it('clears user for logOut action', () => {
     const state = { user: { displayName: 'Han Solo' }, requesting: true }
-    expect(authReducer(state, logOut())).toEqual({ requesting: true })
+    expect(authReducer(state, { type: AUTH_LOG_OUT })).toEqual({
+      requesting: true
+    })
   })
 })

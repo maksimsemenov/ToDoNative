@@ -6,7 +6,6 @@ export const AUTH_LOG_OUT = 'AUTH_LOG_OUT'
 
 export const logIn = user => ({ type: AUTH_LOG_IN, user })
 export const logOut = () => dispatch => {
-  console.log('logOut')
   firebase
     .auth()
     .signOut()

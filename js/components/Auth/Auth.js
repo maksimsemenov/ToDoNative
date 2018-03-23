@@ -11,15 +11,17 @@ import {
   View,
   StyleSheet
 } from 'react-native'
+import SocialButton from './SocialButton/SocialButton'
 import { getUser } from '../../redux/selectors/auth'
 import { logIn, logOut } from '../../redux/reducers/auth'
-import { accentColor } from '../../constants/styles'
+import { colors } from '../../constants/styles'
 
 const styles = StyleSheet.create({
   container: {
     position: 'absolute',
     top: 30,
-    left: 10
+    left: 10,
+    flexDirection: 'row'
   },
   touchableContainer: {
     width: 40,
@@ -32,7 +34,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 25,
-    backgroundColor: accentColor
+    backgroundColor: colors.accent
   },
   image: {
     width: 50,
@@ -70,7 +72,7 @@ class Auth extends PureComponent {
     this.authSubscription()
   }
 
-  handleFacebokAuth = () => {
+  handleFacebookAuth = () => {
     LoginManager.logInWithReadPermissions(['public_profile', 'email'])
       .then(result => {
         if (result.isCancelled) {
@@ -108,7 +110,11 @@ class Auth extends PureComponent {
         </View>
       )
     }
-    return <Button onPress={this.handleFacebokAuth} title="Facebook" />
+    return (
+      <View style={styles.container}>
+        <SocialButton provider="facebook" onPress={this.handleFacebookAuth} />
+      </View>
+    )
   }
 }
 

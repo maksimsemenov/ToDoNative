@@ -1,1 +1,4 @@
-export const accentColor = '#318CE8'
+export const colors = {
+  accent: '#318CE8',
+  lightGary: '#dddddd'
+}
