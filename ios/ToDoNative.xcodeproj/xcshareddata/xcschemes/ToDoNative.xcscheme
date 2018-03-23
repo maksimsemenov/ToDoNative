@@ -30,7 +30,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
                BuildableName = "ToDoNative.app"
-               BlueprintName = "ToDo"
+               BlueprintName = "ToDoNative"
                ReferencedContainer = "container:ToDoNative.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ToDoTests.xctest"
-               BlueprintName = "ToDoTests"
+               BuildableName = "ToDoNativeTests.xctest"
+               BlueprintName = "ToDoNativeTests"
                ReferencedContainer = "container:ToDoNative.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -62,8 +62,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "ToDoTests.xctest"
-               BlueprintName = "ToDoTests"
+               BuildableName = "ToDoNativeTests.xctest"
+               BlueprintName = "ToDoNativeTests"
                ReferencedContainer = "container:ToDoNative.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -73,7 +73,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
             BuildableName = "ToDoNative.app"
-            BlueprintName = "ToDo"
+            BlueprintName = "ToDoNative"
             ReferencedContainer = "container:ToDoNative.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -97,7 +97,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
             BuildableName = "ToDoNative.app"
-            BlueprintName = "ToDo"
+            BlueprintName = "ToDoNative"
             ReferencedContainer = "container:ToDoNative.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -116,7 +116,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
             BuildableName = "ToDoNative.app"
-            BlueprintName = "ToDo"
+            BlueprintName = "ToDoNative"
             ReferencedContainer = "container:ToDoNative.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
