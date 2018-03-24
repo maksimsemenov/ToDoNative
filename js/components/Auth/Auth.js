@@ -3,14 +3,8 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import firebase from 'react-native-firebase'
 import { LoginManager, AccessToken } from 'react-native-fbsdk'
-import {
-  Text,
-  Button,
-  TouchableHighlight,
-  Image,
-  View,
-  StyleSheet
-} from 'react-native'
+import { GoogleSignin } from 'react-native-google-signin'
+import { Text, TouchableHighlight, Image, View, StyleSheet } from 'react-native'
 import SocialButton from './SocialButton/SocialButton'
 import { getUser } from '../../redux/selectors/auth'
 import { logIn, logOut } from '../../redux/reducers/auth'
@@ -72,27 +66,30 @@ class Auth extends PureComponent {
     this.authSubscription()
   }
 
-  handleFacebookAuth = () => {
-    LoginManager.logInWithReadPermissions(['public_profile', 'email'])
-      .then(result => {
-        if (result.isCancelled) {
-          return Promise.reject(new Error('The user cancelled the request'))
-        }
-        // Retrieve the access token
-        return AccessToken.getCurrentAccessToken()
-      })
-      .then(data => {
-        const credential = firebase.auth.FacebookAuthProvider.credential(
-          data.accessToken
-        )
-        return firebase.auth().signInAndRetrieveDataWithCredential(credential)
-      })
-      .catch(error => {
-        const { code, message } = error
-        // For details of error codes, see the docs
-        // The message contains the default Firebase string
-        // representation of the error
-      })
+  handleFacebookAuth = async () => {
+    try {
+      await LoginManager.logInWithReadPermissions(['public_profile', 'email'])
+      const data = await AccessToken.getCurrentAccessToken()
+      const credential = await firebase.auth.FacebookAuthProvider.credential(
+        data.accessToken
+      )
+      firebase.auth().signInAndRetrieveDataWithCredential(credential)
+    } catch (e) {
+      console.log(e)
+    }
+  }
+  handleGoogleAuth = async () => {
+    try {
+      await GoogleSignin.configure()
+      const data = await GoogleSignin.signIn()
+      const credential = firebase.auth.GoogleAuthProvider.credential(
+        data.idToken,
+        data.accessToken
+      )
+      firebase.auth().signInWithCredential(credential)
+    } catch (e) {
+      console.log(e)
+    }
   }
   render() {
     const { user, logOut } = this.props

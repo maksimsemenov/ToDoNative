@@ -8,11 +8,12 @@ target 'ToDoNative' do
   # Pods for ToDoNative
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
-
   # pod 'FBSDKCoreKit'
   # pod 'FBSDKLoginKit'
 
 
+
+  pod 'React', :path => '../node_modules/react-native'
 
   target 'ToDoNativeTests' do
     inherit! :search_paths
